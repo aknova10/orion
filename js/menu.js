@@ -50,3 +50,7 @@ function navOpen() {
         document.getElementById("nav-item").style.display= "none";
     }
 }
+
+function sendMsg() {
+    alert("Message sent");
+}

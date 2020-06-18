@@ -3,6 +3,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+* {
+  color: white;
+}
+
+.bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
 .logo {
   position: absolute;
   top: 5%;
@@ -77,6 +87,11 @@ body {
       grid-template-rows: 20% auto;
 }
 
+.container div {
+  background-color: rgba(0, 0, 0, 0.479);
+  padding: 5%;
+}
+
 .heading1 {
   -ms-grid-row: 2;
       grid-row-start: 2;
@@ -89,6 +104,7 @@ body {
 }
 
 .heading1 p {
+  text-indent: 50px;
   font-size: 40px;
 }
 
@@ -104,6 +120,7 @@ body {
 }
 
 .heading2 p {
+  text-indent: 50px;
   font-size: 40px;
 }
 
@@ -118,6 +135,22 @@ body {
   font-size: 50px;
 }
 
+#about {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+#about h2 {
+  font-size: 50px;
+}
+
+#about p {
+  text-indent: 50px;
+  font-size: 40px;
+}
+
 .footer {
   -ms-grid-row: 99;
       grid-row-start: 99;
@@ -127,6 +160,15 @@ body {
 }
 
 @media screen and (max-width: 1920px) {
+  .bg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 1515px;
+    z-index: -1;
+  }
   .logo {
     position: absolute;
     top: 5%;
@@ -223,6 +265,18 @@ body {
   #contact h2 {
     font-size: 50px;
   }
+  #about {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  #about h2 {
+    font-size: 50px;
+  }
+  #about p {
+    font-size: 30px;
+  }
   .footer {
     -ms-grid-row: 99;
         grid-row-start: 99;
@@ -232,7 +286,141 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
+  .bg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 1024px;
+  }
+  .logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    max-width: 20%;
+  }
+  #navbar {
+    background-color: #000;
+    position: relative;
+    top: 90%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: left;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #navbar input {
+    position: fixed;
+    bottom: 3%;
+    left: 5%;
+    max-width: 7%;
+    outline: none;
+  }
+  #navbar ul {
+    list-style-type: none;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navbar ul li {
+    padding: 20px 0px;
+  }
+  #navbar ul li a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+  }
+  #to-top {
+    position: fixed;
+    top: 90%;
+    left: 75%;
+    outline: none;
+    max-width: 15%;
+  }
+  #menu-open {
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    outline: none;
+    max-width: 15%;
+  }
+  .container {
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% auto 5%;
+        grid-template-columns: 5% auto 5%;
+    -ms-grid-rows: 20% auto;
+        grid-template-rows: 20% auto;
+  }
+  .heading1 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .heading1 h2 {
+    font-size: 45px;
+  }
+  .heading1 p {
+    font-size: 35px;
+  }
+  .heading2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .heading2 h2 {
+    font-size: 45px;
+  }
+  .heading2 p {
+    font-size: 35px;
+  }
+  #contact {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  #contact h2 {
+    font-size: 45px;
+  }
+  #about {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  #about h2 {
+    font-size: 45px;
+  }
+  #about p {
+    font-size: 35px;
+  }
+  .footer {
+    -ms-grid-row: 99;
+        grid-row-start: 99;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    padding: 13%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .bg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 780px;
+  }
   .logo {
     position: absolute;
     top: 5%;
@@ -291,10 +479,10 @@ body {
     max-width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 10% auto 10%;
-        grid-template-columns: 10% auto 10%;
-    -ms-grid-rows: 30% auto;
-        grid-template-rows: 30% auto;
+    -ms-grid-columns: 5% auto 5%;
+        grid-template-columns: 5% auto 5%;
+    -ms-grid-rows: 20% auto;
+        grid-template-rows: 20% auto;
   }
   .heading1 {
     -ms-grid-row: 2;
@@ -303,10 +491,10 @@ body {
         grid-column-start: 2;
   }
   .heading1 h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
   .heading1 p {
-    font-size: 15px;
+    font-size: 30px;
   }
   .heading2 {
     -ms-grid-row: 3;
@@ -315,10 +503,10 @@ body {
         grid-column-start: 2;
   }
   .heading2 h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
   .heading2 p {
-    font-size: 15px;
+    font-size: 30px;
   }
   #contact {
     -ms-grid-row: 4;
@@ -327,7 +515,16 @@ body {
         grid-column-start: 2;
   }
   #contact h2 {
-    font-size: 20px;
+    font-size: 40px;
+  }
+  #about {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  #about h2 {
+    font-size: 40px;
   }
   .footer {
     -ms-grid-row: 99;
@@ -339,6 +536,14 @@ body {
 }
 
 @media screen and (max-width: 414px) {
+  .bg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 360px;
+  }
   .logo {
     position: absolute;
     top: 5%;
@@ -402,6 +607,10 @@ body {
     -ms-grid-rows: 30% auto;
         grid-template-rows: 30% auto;
   }
+  .container div {
+    background-color: rgba(0, 0, 0, 0.479);
+    padding: 5%;
+  }
   .heading1 {
     -ms-grid-row: 2;
         grid-row-start: 2;
@@ -435,12 +644,27 @@ body {
   #contact h2 {
     font-size: 20px;
   }
+  #about {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  #about h2 {
+    font-size: 20px;
+  }
+  #about p {
+    font-size: 15px;
+  }
+  #about p {
+    font-size: 15px;
+  }
   .footer {
     -ms-grid-row: 99;
         grid-row-start: 99;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    padding: 13%;
+    padding-top: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */
