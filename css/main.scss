@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 30%;
+    }
+
+    #navbar {
+        background-color: #000;
+        position: relative;
+        top: 0%;
+        bottom: 90%;
+        left: 0%;
+        right: 0%;
+        // display: grid;
+        // grid-template-columns: 5% 10fr 10fr 10fr 10%;
+        // grid-template-rows: 10% 10fr;
+        text-align: left;
+        input {
+            position: fixed;
+            bottom: 3%;
+            left: 5%;
+            max-width: 7%;
+            outline: none;
+        }
+        ul {
+            list-style-type: none;
+            display: none;
+            flex-direction: column;
+            li {
+                padding: 20px 0px;
+                a {
+                    font-size: 40px;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        transition: 0.5s;
+    }
+
+    #to-top {
+        display: block;
+        position: fixed;
+        top: 87%;
+        left: 73%;
+        outline: none;
+        max-width: 15%;
+    }
+    
+    #menu-open {
+        position: fixed;
+        top: 75%;
+        left: 80%;
+        outline: none;
+        max-width: 15%;
+        z-index: 999;
+        
+    }
+    .container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 20% auto;
+    }
+    .heading1 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        h2 {
+            font-size: 50px;
+
+        }
+        p {
+            font-size: 40px;
+        }
+    }
+    .heading2 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        h2 {
+            font-size: 50px;
+            
+        }
+        p {
+            font-size: 40px;
+        }
+    }
+    #contact {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        h2 {
+            font-size: 50px;
+
+        }
+    }
+    .footer {
+        // background: #ddd;
+        grid-row-start: 99;
+        grid-column-start: 2;
+        padding: 13%;
+    }
+
+@media screen and (max-width: 1920px) {
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 10%;
+    }
+    
+
+    #navbar {
+        background-color: #000;
+        position: relative;
+        top: 90%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        // display: grid;
+        // grid-template-columns: 5% 10fr 10fr 10fr 10%;
+        // grid-template-rows: 10% 10fr;
+        text-align: left;
+        input {
+            position: fixed;
+            bottom: 3%;
+            left: 1%;
+            max-width: 2%;
+            outline: none;
+        }
+        ul {
+            list-style-type: none;
+            display: none;
+            flex-direction: column;
+            li {
+                padding: 20px 0px;
+                a {
+                    font-size: large;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        transition: 0.5s;
+    }
+
+    #to-top {
+        position: fixed;
+        top: 90%;
+        left: 75%;
+        outline: none;
+        max-width: 15%;
+    }
+
+    #menu-open {
+        position: fixed;
+        top: 80%;
+        left: 80%;
+        outline: none;
+        max-width: 15%;
+    }
+
+    .container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 5% auto 10%;
+        grid-template-rows: 30% auto;
+        
+        
+        // div:nth-of-type(odd) {
+        //     background-color: #777676;
+        // }
+        // div:nth-of-type(even) {
+        //     background-color: rgb(80, 80, 80);
+        // }
+
+
+    }
+    .heading1 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        h2 {
+            font-size: 50px;
+
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+    .heading2 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        h2 {
+            font-size: 50px;
+
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+    #contact {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        h2 {
+            font-size: 50px;
+
+        }
+    }
+    .footer {
+        // background: #ddd;
+        grid-row-start: 99;
+        grid-column-start: 2;
+        padding: 13%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 20%;
+    }
+    
+
+    #navbar {
+        background-color: #000;
+        position: relative;
+        top: 90%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        // display: grid;
+        // grid-template-columns: 5% 10fr 10fr 10fr 10%;
+        // grid-template-rows: 10% 10fr;
+        text-align: left;
+        input {
+            position: fixed;
+            bottom: 3%;
+            left: 5%;
+            max-width: 7%;
+            outline: none;
+        }
+        ul {
+            list-style-type: none;
+            display: none;
+            flex-direction: column;
+            li {
+                padding: 20px 0px;
+                a {
+                    font-size: large;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        transition: 0.5s;
+    }
+
+    #to-top {
+        position: fixed;
+        top: 90%;
+        left: 75%;
+        outline: none;
+        max-width: 15%;
+    }
+
+    #menu-open {
+        position: fixed;
+        top: 80%;
+        left: 80%;
+        outline: none;
+        max-width: 15%;
+    }
+
+    .container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 30% auto;
+    }
+    .heading1 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        h2 {
+            font-size: 20px;
+
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .heading2 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        h2 {
+            font-size: 20px;
+
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    #contact {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        h2 {
+            font-size: 20px;
+
+        }
+    }
+    .footer {
+        // background: #ddd;
+        grid-row-start: 99;
+        grid-column-start: 2;
+        padding: 13%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+   
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 25%;
+    }
+    
+
+    #navbar {
+        background-color: #000;
+        position: relative;
+        top: 90%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        // display: grid;
+        // grid-template-columns: 5% 10fr 10fr 10fr 10%;
+        // grid-template-rows: 10% 10fr;
+        text-align: left;
+        input {
+            position: fixed;
+            bottom: 3%;
+            left: 5%;
+            max-width: 7%;
+            outline: none;
+        }
+        ul {
+            list-style-type: none;
+            display: none;
+            flex-direction: column;
+            li {
+                padding: 20px 0px;
+                a {
+                    font-size: large;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        transition: 0.5s;
+    }
+
+    #to-top {
+        position: fixed;
+        top: 90%;
+        left: 75%;
+        outline: none;
+        max-width: 15%;
+    }
+
+    #menu-open {
+        position: fixed;
+        top: 80%;
+        left: 80%;
+        outline: none;
+        max-width: 15%;
+    }
+
+    .container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 30% auto;
+    }
+    .heading1 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        h2 {
+            font-size: 20px;
+
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .heading2 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        h2 {
+            font-size: 20px;
+
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    #contact {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        h2 {
+            font-size: 20px;
+
+        }
+    }
+    .footer {
+        // background: #ddd;
+        grid-row-start: 99;
+        grid-column-start: 2;
+        padding: 13%;
+    }
+}

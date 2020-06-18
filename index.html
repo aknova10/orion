@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/menu.js"></script>
+    <script>
+        var toTopBtn = document.getElementById("to-top");
+        window.onscroll = function() {toTopBtnShow()};
+        function toTopBtnShow() {
+        if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            toTopBtn.style.display = "block";
+        }
+        else {
+            toTopBtn.style.display = "none";
+        }
+
+}
+    </script>
+    <title>RoboSanitizer</title>
+</head>
+<body>
+<nav id="navbar" style="position: fixed; top: 90%; bottom: 0%; left: 0%; right: 0%;">
+        <input type="image" src="/img/menubar.svg"  onclick="navOpen()">
+        <ul id="nav-item">
+            <li>
+                <a href="#" onclick="navOpen()">HOME</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="navOpen()">CONTACT</a>
+            </li>
+            <li>
+                <a href="#about" onclick="navOpen()">ABOUT</a>
+            </li>
+            <li>
+                <a href="#"> </a>
+            </li>
+
+
+        </ul>
+    </nav>
+    <img src="/img/logo.svg" class="logo" alt="" width="30%">
+    <!-- <input type="image" id="to-top" onclick="toTop()" src="/img/toTop.svg" width="10%"> -->
+    <!-- <input type="image" style="z-index: 1; display: block;" id="menu-open" onclick="menuReveal()" src="/img/openMenu.svg" width="14%"> -->
+    <div class="container">
+        <div class="heading1">
+            <h2>What is RoboSanitizer ?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, numquam neque quas sit temporibus aliquam id, dolorem nesciunt, rerum quo nemo esse vitae libero.
+            </p>
+        </div>
+        <div class="heading2">
+            <h2>Why use RoboSanitizer ?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla, nihil sint eligendi perspiciatis, at aliquid voluptates quaerat dolorem porro expedita modi eveniet recusandae!
+            </p>
+        </div>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Name" class="form-control"><br>
+                <input type="email" placeholder="Email" class="form-control"><br>
+                <textarea name="msg" cols="30" rows="10" placeholder="Express your concerns..." class="form-control"></textarea> <br>
+                <input type="submit" value="Submit" class="btn btn-warning">
+            </form>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    
+
+</body>
+</html>
